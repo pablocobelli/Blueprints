@@ -1,0 +1,38 @@
+\documentclass[reprint,longbibliography,prl,floatfix,linenumbers,superscriptaddress,a4paper,nofootinbib]{revtex4-1}
+% Necessary LaTeX packages. 
+\usepackage[english]{babel}                 % English dictionary.
+\usepackage[T1]{fontenc}                    % Type1 fonts (typography).
+\usepackage[latin1]{inputenc}               % Encoding.
+\usepackage{amsfonts,amsmath,amssymb}       % AMS fonts & symbols.
+\usepackage{graphicx}                       % Including eps figures.
+\usepackage[caption=false]{subfig}          % Subfigures and subcaptions.
+\usepackage{hyperref}                       % Links on eqs, sections, etc.
+\usepackage[framemethod=tikz]{mdframed}     % Highlight paragraphs
+\newcommand{\fw}{8cm}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+\graphicspath{{Figures/}}
+
+\begin{document}
+\title{}
+\author{Pablo Cobelli}
+\affiliation{Departamento de F\'\i sica, Facultad de Ciencias Exactas y 
+Naturales, Universidad de Buenos Aires and IFIBA, CONICET, Ciudad 
+Universitaria, 1428 Buenos Aires, Argentina}
+\author{}
+\affiliation{}
+\date{\today}
+
+% \input{Abstract}
+
+\maketitle
+
+% \input{Body}
+
+% \nocite{*} 
+\bibliography{bibliography} 
+\bibliographystyle{apsrev4-1}
+
+% \input{ExtraMaterial}
+
+\end{document}
