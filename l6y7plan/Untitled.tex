@@ -30,6 +30,9 @@
 \setlength\tocsep{1.5pc} % Sets the indentation of the sections in the table of contents
 \setcounter{tocdepth}{3} % Show only three levels in the table of contents section: sections, subsections and subsubsections
 
+\usepackage{cite}
+\usepackage{pgfgantt}
+\usepackage{hyperref}
 \usepackage{lipsum} % Required to insert dummy text
 \graphicspath{{Figures/}}
 
@@ -37,14 +40,14 @@
 %	ARTICLE INFORMATION
 %----------------------------------------------------------------------------------------
 
-\JournalInfo{Journal, Vol. XXI, No. 1, 1-5, 2013} % Journal information
-\Archive{Additional note} % Additional notes (e.g. copyright, DOI, review/research article)
+\JournalInfo{Plan de Trabajo de Laboratorio 6 (1er cuat. 2014)} 
+\Archive{Laboratorio de Turbulencia Geof\'\i sica, DF FCEyN, UBA} 
 
 \PaperTitle{Article Title} % Article title
 
 \Authors{estudiante(s)\textsuperscript{1}*, Director: Dr. Pablo J. Cobelli\textsuperscript{2}} % Authors
-\affiliation{\textsuperscript{1}\textit{afiliacion estudiante(s)}} % Author affiliation
-\affiliation{\textsuperscript{2}\textit{Departamento de F\'\i sica, FCEN UBA &
+\affiliation{\textsuperscript{1}\textit{Afiliacion estudiante(s)}} % Author affiliation
+\affiliation{\textsuperscript{2}\textit{Departamento de F\'\i sica, FCEN UBA \&
 IFIBA CONICET}} % Author affiliation
 \affiliation{*\textbf{E-mail}: cobelli@df.uba.ar} % Corresponding author
 
@@ -81,7 +84,7 @@ IFIBA CONICET}} % Author affiliation
 
 %------------------------------------------------
 
-\section{Methods}
+\section{Motivaci\'on}
 
 \begin{figure*}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
 % \includegraphics[width=\linewidth]{view}
@@ -125,7 +128,51 @@ Reference to Figure \ref{fig:results}.
 
 %------------------------------------------------
 
-\section{Results and Discussion}
+\section{Objetivos}
+
+\indent En esta secci\'on se describen los objetivos (tanto general como espec\'\i ficos) que se busca alcanzar en el marco del presente proyecto. 
+
+\subsection{Objetivo general}
+
+\indent El principal objetivo general que se persigue con el presente plan de trabajo es ...
+
+\subsection{Objetivos espec\'\i ficos y metodolog\'\i a}
+
+\indent Para la consecuci\'on del objetivo general descrito en la secci\'on precedente, se propone:
+
+\section{Factibilidad del plan propuesto}
+
+\subsection{Disponibilidad de equipamiento e insumos}
+
+\subsection{Recursos computacionales}
+
+\section{Cronograma de actividades}
+
+El cronograma de las actividades a llevar a cabo, junto con su extensi\'on temporal se consigna en el diagrama de Gantt de la Fig.~\ref{fig:gantt}, para el per\'\i odo correspondiente a la cursada de Laboratorio 6 (entre la \'ultima semana de marzo y la primera de agosto). 
+
+\begin{figure*}[ht!]
+\centering
+\begin{tikzpicture}
+\begin{ganttchart}[vgrid={dotted}, hgrid={dotted}]{1}{12} 
+\gantttitle{2014}{12} \\ 
+\gantttitlelist{1,...,12}{1} \\ 
+\ganttgroup{Laboratorio 6 \:}{3.75}{7} \\ 
+\ganttbar{B\'usqueda bibliogr\'afica \:}{3.75}{5.5} \\ 
+\ganttbar{Dise\~no y simulaci\'on \:}{3.75}{4.25} \\
+\ganttbar{Construcci\'on del prototipo \:}{4.5}{6.5} \\
+\ganttbar{Caracterizaci\'on experimental \:}{6.5}{8} \\
+%\ganttlinkedbar{Montaje del setup experimental}{4}{6} 
+% \ganttbar{Mediciones y an\'alisis preliminar \:}{6}{7} \\
+\ganttmilestone{Resultados preliminares del estudio \:}{7} \\
+\ganttgroup{Laboratorio 7 \:}{8}{11} 
+\end{ganttchart}
+\end{tikzpicture}
+\caption{Diagrama de Gantt para las actividades propuestas por el presente plan de trabajo.}
+\label{fig:gantt}
+\end{figure*}
+
+
+\section{Otra seccion}
 
 \lipsum[10] % Dummy text
 
@@ -179,11 +226,11 @@ Richard & Miles & $2$ \\
 
 %------------------------------------------------
 
-\section*{Acknowledgments} % The \section*{} command stops section numbering
+% \section*{Acknowledgments} % The \section*{} command stops section numbering
 
-\addcontentsline{toc}{section}{\hspace*{-\tocsep}Acknowledgments} % Adds this section to the table of contents with negative horizontal space equal to the indent for the numbered sections
+% \addcontentsline{toc}{section}{\hspace*{-\tocsep}Acknowledgments} % Adds this section to the table of contents with negative horizontal space equal to the indent for the numbered sections
 
-So long and thanks for all the fish \cite{Figueredo:2009dg}.
+% So long and thanks for all the fish \cite{Figueredo:2009dg}.
 
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
